@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Password Generator</title>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="generatorContainer">
+      <div id="recentBtn"><i class="fa-solid fa-history"></i></div>
+      <div class="title">Pass Gen <i class="fa-solid fa-key"></i></div>
+      <div id="show">----------</div>
+      <div class="checkboxContainer">
+        <div class="field-checkers">
+          <input type="checkbox" name="includeSymbols" id="includeSymbols">
+          <label for="includeSymbols">
+            <div class="textContainer">Include Symbols</div>
+            <div class="toggleButton"></div>
+          </label>
+        </div>
+      </div>
+      <br>
+      <label for="passLen" id="lenLabel"></label>
+      <input type="range" name="passwordLength" id="passLen"min="8" max="20">
+      <button id="generateButton">Generate</button>
+    </div>
+  </body>
+</html>
